@@ -18,23 +18,23 @@ export function HeroSection() {
         <div className="mb-8">
           <div className="w-32 h-32 mx-auto rounded-full bg-hero-gradient p-1 shadow-glow">
             <div className="w-full h-full rounded-full bg-background flex items-center justify-center text-6xl font-bold text-primary">
-              P
+              N
             </div>
           </div>
         </div>
 
         {/* Main content */}
         <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-          <span className="bg-hero-gradient bg-clip-text text-transparent">
-            Developer
-          </span>
+          <span className="text-foreground">Nguyễn Tuấn Anh</span>
           <br />
-          <span className="text-foreground">& Creator</span>
+          <span className="bg-hero-gradient bg-clip-text text-transparent">
+            Software Engineering Student
+          </span>
         </h1>
 
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in">
-          Tôi tạo ra những trải nghiệm web đẹp và tương tác, 
-          chuyên về React, TypeScript và thiết kế UI/UX hiện đại.
+          Sinh viên Công nghệ phần mềm tại ĐH Tài nguyên và Môi trường Hà Nội. 
+          Đam mê học hỏi và phát triển trong lĩnh vực CNTT, tìm kiếm cơ hội thực tập.
         </p>
 
         {/* CTA Buttons */}

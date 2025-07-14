@@ -6,28 +6,28 @@ export function AboutSection() {
   const highlights = [
     {
       icon: <Code className="w-6 h-6" />,
-      title: "Full-Stack Developer",
-      description: "Chuyên về React, Node.js, và các công nghệ web hiện đại"
+      title: "Software Engineering Student",
+      description: "Đang theo học Công nghệ phần mềm tại ĐH Tài nguyên và Môi trường Hà Nội"
     },
     {
       icon: <Lightbulb className="w-6 h-6" />,
       title: "Problem Solver",
-      description: "Đam mê giải quyết vấn đề phức tạp với giải pháp sáng tạo"
+      description: "Có tư duy logic tốt và khả năng giải quyết vấn đề hiệu quả"
     },
     {
       icon: <Target className="w-6 h-6" />,
       title: "Goal-Oriented",
-      description: "Tập trung vào kết quả và trải nghiệm người dùng tối ưu"
+      description: "Mục tiêu rõ ràng: trở thành lập trình viên giỏi trong tương lai"
     }
   ];
 
   const interests = [
-    "AI & Machine Learning",
-    "Web3 & Blockchain", 
-    "Mobile Development",
-    "Cloud Computing",
-    "UI/UX Design",
-    "Open Source"
+    "Lập trình Python",
+    "Web Development", 
+    "Database Design",
+    "Software Engineering",
+    "Nghiên cứu khoa học",
+    "Công nghệ mới"
   ];
 
   return (
@@ -40,7 +40,7 @@ export function AboutSection() {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Tôi là một developer đam mê tạo ra những sản phẩm có ý nghĩa và tác động tích cực đến cuộc sống.
+            Sinh viên năm 4 ngành Công nghệ phần mềm, đam mê học hỏi và phát triển trong lĩnh vực CNTT.
           </p>
         </div>
 
@@ -58,13 +58,12 @@ export function AboutSection() {
                 
                 <div className="space-y-4 text-muted-foreground">
                   <p className="leading-relaxed">
-                    Với hơn 3 năm kinh nghiệm trong phát triển web, tôi đã tham gia vào nhiều dự án 
-                    từ startup đến enterprise. Tôi tin rằng code tốt không chỉ hoạt động mà còn phải 
-                    dễ đọc, dễ bảo trì và có thể mở rộng.
+                    Tôi là sinh viên năm 4 ngành Công nghệ phần mềm tại Đại học Tài nguyên và Môi trường Hà Nội.
+                    Hiện có GPA 3.0/4.0 và đang tích cực học hỏi để phát triển kỹ năng lập trình.
                   </p>
                   <p className="leading-relaxed">
-                    Ngoài coding, tôi thích chia sẻ kiến thức qua blog, contributing vào open source 
-                    và luôn học hỏi những công nghệ mới nhất trong ngành.
+                    Mục tiêu ngắn hạn của tôi là tìm cơ hội thực tập trong môi trường chuyên nghiệp để rèn luyện 
+                    kỹ năng và học hỏi từ những người có kinh nghiệm. Dài hạn là trở thành một lập trình viên giỏi.
                   </p>
                 </div>
 

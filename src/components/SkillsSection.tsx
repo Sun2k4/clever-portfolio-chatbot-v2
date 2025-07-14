@@ -5,38 +5,38 @@ import { Progress } from "@/components/ui/progress";
 export function SkillsSection() {
   const skillCategories = [
     {
-      title: "Frontend",
+      title: "Ngôn ngữ lập trình",
       skills: [
-        { name: "React/Next.js", level: 90 },
-        { name: "TypeScript", level: 85 },
-        { name: "Tailwind CSS", level: 95 },
-        { name: "Vue.js", level: 75 }
+        { name: "Python", level: 60 },
+        { name: "Java", level: 55 },
+        { name: "HTML/CSS", level: 70 },
+        { name: "JavaScript", level: 50 }
       ]
     },
     {
-      title: "Backend", 
+      title: "Database & Tools", 
       skills: [
-        { name: "Node.js", level: 80 },
-        { name: "Python", level: 75 },
-        { name: "PostgreSQL", level: 85 },
-        { name: "MongoDB", level: 70 }
+        { name: "MySQL", level: 65 },
+        { name: "PHP", level: 60 },
+        { name: "VS Code", level: 80 },
+        { name: "Git", level: 50 }
       ]
     },
     {
-      title: "Tools & Others",
+      title: "Kỹ năng mềm",
       skills: [
-        { name: "Git/GitHub", level: 90 },
-        { name: "Docker", level: 70 },
-        { name: "AWS/Vercel", level: 75 },
-        { name: "Figma", level: 80 }
+        { name: "Làm việc nhóm", level: 85 },
+        { name: "Quản lý thời gian", level: 80 },
+        { name: "Tư duy logic", level: 75 },
+        { name: "Thích nghi", level: 90 }
       ]
     }
   ];
 
   const technologies = [
-    "React", "TypeScript", "Next.js", "Vue.js", "Node.js", "Python",
-    "PostgreSQL", "MongoDB", "Tailwind CSS", "Docker", "AWS", "Vercel",
-    "Git", "Figma", "Supabase", "Firebase", "GraphQL", "REST APIs"
+    "Python", "Java", "HTML", "CSS", "JavaScript", "PHP", "MySQL", 
+    "VS Code", "Git", "Word", "Excel", "PowerPoint", "Phân tích yêu cầu",
+    "Kiểm thử phần mềm", "Viết báo cáo", "Nghiên cứu khoa học"
   ];
 
   return (

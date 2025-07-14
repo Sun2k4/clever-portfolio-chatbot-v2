@@ -37,19 +37,19 @@ export function ContactSection() {
     {
       icon: <Mail className="w-5 h-5" />,
       label: "Email",
-      value: "your.email@example.com",
-      href: "mailto:your.email@example.com"
+      value: "tanh0411k4@gmail.com",
+      href: "mailto:tanh0411k4@gmail.com"
     },
     {
       icon: <Phone className="w-5 h-5" />,
       label: "Điện thoại",
-      value: "+84 xxx xxx xxx",
-      href: "tel:+84xxxxxxxxx"
+      value: "0852226288",
+      href: "tel:0852226288"
     },
     {
       icon: <MapPin className="w-5 h-5" />,
       label: "Địa chỉ",
-      value: "Ho Chi Minh City, Vietnam",
+      value: "Bắc Từ Liêm, Hà Nội",
       href: "#"
     }
   ];
@@ -70,7 +70,7 @@ export function ContactSection() {
     {
       icon: <Mail className="w-5 h-5" />,
       label: "Email",
-      href: "mailto:your.email@example.com",
+      href: "mailto:tanh0411k4@gmail.com",
       color: "hover:text-red-400"
     }
   ];
@@ -85,7 +85,7 @@ export function ContactSection() {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Có ý tưởng dự án hay muốn hợp tác? Hãy liên hệ với tôi!
+            Đang tìm kiếm cơ hội thực tập hoặc có câu hỏi? Hãy liên hệ với tôi!
           </p>
         </div>
 

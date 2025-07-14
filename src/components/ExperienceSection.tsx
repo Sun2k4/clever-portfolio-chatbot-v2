@@ -5,46 +5,22 @@ import { Calendar, MapPin, Building } from "lucide-react";
 export function ExperienceSection() {
   const experiences = [
     {
-      company: "Tech Startup Co.",
-      position: "Senior Frontend Developer",
-      location: "Ho Chi Minh City",
-      duration: "2022 - Hiện tại",
-      description: "Phát triển và maintain các web applications sử dụng React, TypeScript. Lead team 4 developers, implement CI/CD pipeline và improve performance 40%.",
-      technologies: ["React", "TypeScript", "Next.js", "AWS", "Docker"],
-      type: "Full-time"
-    },
-    {
-      company: "Digital Agency",
-      position: "Full-Stack Developer", 
-      location: "Ha Noi",
-      duration: "2021 - 2022",
-      description: "Xây dựng websites và web applications cho clients. Phối hợp với design team và project managers để deliver projects đúng timeline.",
-      technologies: ["Vue.js", "Node.js", "MySQL", "PHP", "WordPress"],
-      type: "Full-time"
-    },
-    {
-      company: "Freelance",
-      position: "Web Developer",
-      location: "Remote",
-      duration: "2020 - 2021", 
-      description: "Freelance developer cho các dự án nhỏ và vừa. Xây dựng landing pages, e-commerce sites và web applications.",
-      technologies: ["HTML", "CSS", "JavaScript", "React", "Firebase"],
-      type: "Freelance"
+      company: "ĐH Tài nguyên và Môi trường Hà Nội",
+      position: "Nghiên cứu sinh viên",
+      location: "Hà Nội",
+      duration: "09/2024 - 06/2025",
+      description: "Thực hiện đề tài nghiên cứu khoa học về Website Quản Lý Nghiệp Vụ Giảng Viên. Phân tích yêu cầu, lập trình, kiểm thử và viết báo cáo nghiên cứu.",
+      technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+      type: "Research"
     }
   ];
 
   const education = [
     {
-      school: "Đại học Bách Khoa Hà Nội",
-      degree: "Cử nhân Khoa học Máy tính",
-      duration: "2018 - 2022",
-      description: "Chuyên ngành Công nghệ phần mềm. GPA: 3.6/4.0"
-    },
-    {
-      school: "FreeCodeCamp",
-      degree: "Full-Stack Web Development",
-      duration: "2020",
-      description: "Chứng chỉ Full-Stack Web Development với 300+ hours coding"
+      school: "ĐH Tài nguyên và Môi trường Hà Nội",
+      degree: "Cử nhân Công nghệ phần mềm",
+      duration: "2021 - nay",
+      description: "Đang theo học năm 4. GPA: 3.0/4.0. Xếp loại học lực: Khá"
     }
   ];
 

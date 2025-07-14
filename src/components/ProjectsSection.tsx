@@ -6,40 +6,26 @@ import { ExternalLink, Github } from "lucide-react";
 export function ProjectsSection() {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Nền tảng thương mại điện tử full-stack với React, Node.js và PostgreSQL. Tích hợp thanh toán, quản lý inventory và dashboard admin.",
+      title: "Website Quản Lý Nghiệp Vụ Giảng Viên",
+      description: "Đề tài nghiên cứu khoa học sinh viên nhằm hỗ trợ quản lý giảng viên, theo dõi giảng dạy, phân công công việc, đánh giá hiệu suất và hỗ trợ nghiên cứu khoa học.",
       image: "/api/placeholder/600/400",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Tailwind CSS"],
+      technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
       demoUrl: "#",
       githubUrl: "#",
-      featured: true
+      featured: true,
+      period: "09/2024 - 06/2025",
+      role: "Developer & Researcher"
     },
     {
-      title: "Task Management App",
-      description: "Ứng dụng quản lý công việc với real-time collaboration, drag & drop interface và notification system.",
+      title: "Học tập cá nhân",
+      description: "Các dự án nhỏ trong quá trình học tập để rèn luyện kỹ năng lập trình với Python, Java và các công nghệ web cơ bản.",
       image: "/api/placeholder/600/400", 
-      technologies: ["Vue.js", "Socket.io", "MongoDB", "Express"],
+      technologies: ["Python", "Java", "HTML/CSS"],
       demoUrl: "#",
       githubUrl: "#",
-      featured: false
-    },
-    {
-      title: "Weather Dashboard",
-      description: "Dashboard thời tiết với data visualization, forecast 7 ngày và geolocation API integration.",
-      image: "/api/placeholder/600/400",
-      technologies: ["React", "TypeScript", "Chart.js", "OpenWeather API"],
-      demoUrl: "#", 
-      githubUrl: "#",
-      featured: false
-    },
-    {
-      title: "AI Chat Application",
-      description: "Ứng dụng chat tích hợp AI với OpenAI API, real-time messaging và context-aware responses.",
-      image: "/api/placeholder/600/400",
-      technologies: ["Next.js", "OpenAI API", "Supabase", "WebSocket"],
-      demoUrl: "#",
-      githubUrl: "#",
-      featured: true
+      featured: false,
+      period: "2021 - nay",
+      role: "Student Developer"
     }
   ];
 
@@ -53,7 +39,7 @@ export function ProjectsSection() {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Một số dự án tôi đã xây dựng, từ web apps đến mobile applications.
+            Các dự án tôi đã thực hiện trong quá trình học tập và nghiên cứu.
           </p>
         </div>
 

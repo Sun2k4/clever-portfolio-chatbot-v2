@@ -17,7 +17,7 @@ export function AIChatbox() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,
-      text: "Xin chào! Tôi là AI assistant của portfolio này. Tôi có thể trả lời các câu hỏi về kinh nghiệm, kỹ năng, dự án và thông tin liên hệ. Bạn muốn hỏi gì?",
+      text: "Xin chào! Tôi là AI assistant của Nguyễn Tuấn Anh. Tôi có thể trả lời các câu hỏi về học vấn, kỹ năng, dự án nghiên cứu và thông tin liên hệ. Bạn muốn hỏi gì?",
       sender: "ai",
       timestamp: new Date()
     }
@@ -39,32 +39,33 @@ export function AIChatbox() {
 
   // Portfolio information for AI context
   const portfolioContext = {
-    name: "Portfolio Developer",
-    skills: ["React", "TypeScript", "Next.js", "Node.js", "Python", "PostgreSQL", "MongoDB", "Tailwind CSS", "Docker", "AWS"],
-    experience: [
+    name: "Nguyễn Tuấn Anh",
+    skills: ["Python", "Java", "HTML/CSS", "JavaScript", "PHP", "MySQL", "VS Code", "Git"],
+    education: {
+      school: "ĐH Tài nguyên và Môi trường Hà Nội",
+      major: "Công nghệ phần mềm",
+      year: "2021 - nay",
+      gpa: "3.0/4.0",
+      grade: "Khá"
+    },
+    projects: [
       {
-        company: "Tech Startup Co.",
-        position: "Senior Frontend Developer",
-        duration: "2022 - Hiện tại",
-        description: "Phát triển web applications với React, TypeScript. Lead team 4 developers."
-      },
-      {
-        company: "Digital Agency",
-        position: "Full-Stack Developer",
-        duration: "2021 - 2022", 
-        description: "Xây dựng websites và web applications cho clients."
+        name: "Website Quản Lý Nghiệp Vụ Giảng Viên",
+        period: "09/2024 - 06/2025",
+        description: "Đề tài nghiên cứu khoa học sinh viên",
+        technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+        role: "Phân tích yêu cầu, lập trình, kiểm thử, viết báo cáo"
       }
     ],
-    projects: [
-      "E-Commerce Platform với React, Node.js và PostgreSQL",
-      "Task Management App với Vue.js và Socket.io",
-      "Weather Dashboard với React và Chart.js",
-      "AI Chat Application với Next.js và OpenAI API"
-    ],
     contact: {
-      email: "your.email@example.com",
-      location: "Ho Chi Minh City, Vietnam",
-      availability: "Đang mở cho các cơ hội freelance và full-time"
+      email: "tanh0411k4@gmail.com",
+      phone: "0852226288",
+      location: "Bắc Từ Liêm, Hà Nội",
+      availability: "Đang tìm kiếm cơ hội thực tập"
+    },
+    goals: {
+      shortTerm: "Tìm cơ hội thực tập trong môi trường chuyên nghiệp, rèn luyện kỹ năng",
+      longTerm: "Trở thành lập trình viên giỏi trong lĩnh vực CNTT"
     }
   };
 
@@ -76,35 +77,44 @@ export function AIChatbox() {
 
     // Basic keyword matching for demo
     if (message.includes("skill") || message.includes("kỹ năng") || message.includes("công nghệ")) {
-      return `Tôi có kinh nghiệm với các công nghệ sau: ${portfolioContext.skills.join(", ")}. Tôi đặc biệt mạnh về Frontend với React/TypeScript và có kinh nghiệm Full-Stack development.`;
+      return `Tôi có kinh nghiệm với các công nghệ sau: ${portfolioContext.skills.join(", ")}. Tôi đang tập trung học về web development và database.`;
     }
 
-    if (message.includes("experience") || message.includes("kinh nghiệm") || message.includes("làm việc")) {
-      return `Tôi có ${portfolioContext.experience.length} năm kinh nghiệm trong phát triển web. Hiện tại đang là ${portfolioContext.experience[0].position} tại ${portfolioContext.experience[0].company} từ ${portfolioContext.experience[0].duration}.`;
+    if (message.includes("học vấn") || message.includes("trường") || message.includes("đại học")) {
+      return `Tôi đang học ${portfolioContext.education.major} tại ${portfolioContext.education.school} từ ${portfolioContext.education.year}. GPA hiện tại là ${portfolioContext.education.gpa}, xếp loại ${portfolioContext.education.grade}.`;
     }
 
     if (message.includes("project") || message.includes("dự án")) {
-      return `Tôi đã thực hiện nhiều dự án đa dạng bao gồm: ${portfolioContext.projects.join("; ")}. Bạn có muốn biết chi tiết về dự án nào không?`;
+      const project = portfolioContext.projects[0];
+      return `Tôi đang thực hiện dự án "${project.name}" (${project.period}). Đây là ${project.description} sử dụng công nghệ: ${project.technologies.join(", ")}. Vai trò của tôi: ${project.role}.`;
     }
 
     if (message.includes("contact") || message.includes("liên hệ") || message.includes("email")) {
-      return `Bạn có thể liên hệ với tôi qua email: ${portfolioContext.contact.email}. Tôi đang ở ${portfolioContext.contact.location} và ${portfolioContext.contact.availability}.`;
+      return `Bạn có thể liên hệ với tôi qua email: ${portfolioContext.contact.email} hoặc điện thoại: ${portfolioContext.contact.phone}. Tôi đang ở ${portfolioContext.contact.location} và ${portfolioContext.contact.availability}.`;
     }
 
-    if (message.includes("react") || message.includes("frontend")) {
-      return "Tôi có hơn 3 năm kinh nghiệm với React và ecosystem của nó. Tôi đã sử dụng React, Next.js, TypeScript và Tailwind CSS để xây dựng nhiều ứng dụng web hiện đại.";
+    if (message.includes("mục tiêu") || message.includes("career") || message.includes("tương lai")) {
+      return `Mục tiêu ngắn hạn: ${portfolioContext.goals.shortTerm}. Mục tiêu dài hạn: ${portfolioContext.goals.longTerm}.`;
     }
 
-    if (message.includes("backend") || message.includes("node")) {
-      return "Về backend, tôi có kinh nghiệm với Node.js, Express, và các database như PostgreSQL, MongoDB. Tôi cũng có kinh nghiệm với Python và các cloud services như AWS.";
+    if (message.includes("thực tập") || message.includes("internship")) {
+      return `Tôi đang tích cực tìm kiếm cơ hội thực tập để rèn luyện kỹ năng và học hỏi từ môi trường chuyên nghiệp. Bạn có thông tin về cơ hội thực tập nào không?`;
+    }
+
+    if (message.includes("python") || message.includes("java")) {
+      return "Tôi có kiến thức cơ bản về Python và Java. Đang tiếp tục học và rèn luyện để nâng cao kỹ năng lập trình.";
+    }
+
+    if (message.includes("html") || message.includes("css") || message.includes("web")) {
+      return "Tôi có kiến thức về HTML, CSS, JavaScript và PHP. Đang áp dụng vào dự án Website Quản Lý Nghiệp Vụ Giảng Viên với MySQL database.";
     }
 
     if (message.includes("hello") || message.includes("hi") || message.includes("xin chào")) {
-      return "Xin chào! Rất vui được gặp bạn. Tôi có thể giúp bạn tìm hiểu về kinh nghiệm, kỹ năng, dự án của tôi. Bạn muốn hỏi về điều gì?";
+      return "Xin chào! Rất vui được gặp bạn. Tôi có thể giúp bạn tìm hiểu về học vấn, kỹ năng, dự án nghiên cứu của tôi. Bạn muốn hỏi về điều gì?";
     }
 
     // Default response
-    return "Cảm ơn bạn đã hỏi! Tôi có thể trả lời về kỹ năng, kinh nghiệm làm việc, các dự án đã thực hiện, hoặc thông tin liên hệ. Bạn có câu hỏi cụ thể nào không?";
+    return "Cảm ơn bạn đã hỏi! Tôi có thể trả lời về học vấn, kỹ năng, dự án nghiên cứu, mục tiêu nghề nghiệp hoặc thông tin liên hệ. Bạn có câu hỏi cụ thể nào không?";
   };
 
   const handleSendMessage = async () => {
